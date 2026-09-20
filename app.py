@@ -6,4 +6,5 @@ app = Flask(__name__)
 def health():
     return "Application is healthy", 200
 
-app.run(port=8000)
+if __name__ == "__main__":
+    app.run(port=8000)
